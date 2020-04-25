@@ -1,0 +1,30 @@
+Barkodlar, her turlu ticaret malina konulabilen, o malla ilgili stok fiyat bilgileri
+icerebilen ve elektronik tarayıcıyla okunabilen sayilar toplulugudur. Barkodlar belirli bir 
+sistemle yazilirlar. Dunyada en cok kullanilan barkod sistemleri UPC-A, UPC-E, Code128, EAN-13 
+ve EAN 8'dir. Ulkemizde ise EAN-13 barkodlama sistemi kullanilir. Bu sistem 12 adet rakam ve bir adet
+dogrulama rakamindan olusur. Yani son rakam kendinden onceki rakamlarin dogru olup olmadigini kontrol eder.
+EAN-13 tipindeki bir barkodun gecerli olup olmadigini anlamak icin su adimlar izlenir:
+1.adim: Barkoddaki cift basamaklar toplanir: Yani 2., 4.,6.,8.,10. ve 12. basamaktaki
+sayilar toplanir, bu toplam 3 ile carpilir. 
+2.adim:  Barkoddaki tek basamaklar toplanir: Yani 1., 3.,5.,7., 9. ve 11. basamaktaki
+sayilar toplanir.
+3.adim: 1.adimda elde edilen sayi ile 2. adimdan elde edilen sayilar toplanir.
+4.adim: 3. adimda elde edilen toplam kendisinden buyuk 10'un kati olan en yakin sayidan cikartilir.
+5.adim: 4. adimda elde edilen sayi kontrol kodudur. Yani 13 basamakli barkodun son basamagi 4.
+adimda elde edilen sayi ile ayni olmak zorundadir.
+
+Ornek olarak 9780201379624 barkoduna bakalim.
+Barkoddaki cift basamaklarin toplami:7+0+0+3+9+2=21. Bu toplamin 3 kati: 63
+Barkoddaki tek basamaklarin toplami: 9+8+2+1+7+6=33.
+63+33=96 olup, 96'dan buyuk 10'un kati olan ilk sayi 100'dur. 100'den 96'yi cikarirsak 4 elde 
+ederiz, bu da barkodda son rakamdir. Bu sekilde barkodu dogrulamis olduk.
+
+Bu sekilde uretilebilecek gecerli barkod ornekleri  3574660676075 , 8809643505796,
+6971008020809 dir. Ozel olarak 8697543170035 , 8691381000011 ve 8693245019351 Turkiye'den bazi
+gecerli barkod numaralaridir.
+
+6976608020809, 869754317003 , 2112345678900, 1234567890123 gecerli olmayan barkod ornekleri
+olarak verilebilir.
+
+
+
